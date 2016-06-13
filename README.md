@@ -6,32 +6,32 @@ Setup
 ======
 1. Add dependency to your maven project:
 <pre>
-<dependency>
-	<groupId>den.spb.su</groupId>
-	<artifactId>beans-annotation-proc</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<scope>provided</scope>
-	<optional>true</optional>
-</dependency>
+&lt;dependency&gt;
+	&lt;groupId&gt;den.spb.su&lt;/groupId&gt;
+	&lt;artifactId&gt;beans-annotation-proc&lt;/artifactId&gt;
+	&lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+	&lt;scope&gt;provided&lt;/scope&gt;
+	&lt;optional&gt;true&lt;/optional&gt;
+&lt;/dependency&gt;
 </pre>
 1. Configure maven compiler plugin to use annotation processor:
 <pre>
-<build>
-    <plugins>
-        <plugin>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-                <annotationProcessors>
-                    <annotationProcessor>
+&lt;build&gt;
+    &lt;plugins&gt;
+        &lt;plugin&gt;
+            &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;configuration&gt;
+                &lt;source&gt;1.8&lt;/source&gt;
+                &lt;target&gt;1.8&lt;/target&gt;
+                &lt;annotationProcessors&gt;
+                    &lt;annotationProcessor&gt;
 			su.spb.den.processor.PropertiesAnnotationProcessor
-		    </annotationProcessor>
-		</annotationProcessors>
-	    </configuration>
-        </plugin>
-    </plugins>
-</build>
+		    &lt;/annotationProcessor&gt;
+		&lt;/annotationProcessors&gt;
+	    &lt;/configuration&gt;
+        &lt;/plugin&gt;
+    &lt;/plugins&gt;
+&lt;/build&gt;
 </pre>
 
 
