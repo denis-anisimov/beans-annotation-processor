@@ -141,7 +141,10 @@ public class Person {
 In your application code you may call the <code>getProperty</code> method:
 <code>
 String phoneProperty = PropertyAccess.getInstance().getProperty(Contact.class, "phone-id"); // returns "phone";
+
 String nameSubProperty = PropertyAccess.getInstance().getProperty(Contact.class, "person-id","name-id"); // returns "person.name";
+
 String nameProperty = PropertyAccess.getInstance().getProperty(Person.class, "name-id"); // returns "name";
+
 String maleProperty = PropertyAccess.getInstance().getProperty(Person.class, "male-id"); // returns "male";
 </code>
