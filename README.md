@@ -21,7 +21,7 @@ To be able to use annotation processor only use this configuration :
 1. Add dependency to your maven project:
 <pre>
 &lt;dependency&gt;
-	&lt;groupId&gt;den.spb.su&lt;/groupId&gt;
+	&lt;groupId&gt;su.spb.den&lt;/groupId&gt;
 	&lt;artifactId&gt;beans-annotation-proc&lt;/artifactId&gt;
 	&lt;version&gt;1.1-SNAPSHOT&lt;/version&gt;
 	&lt;scope&gt;provided&lt;/scope&gt;
@@ -53,7 +53,7 @@ Runtime access configuration
 If you want to use properties access API then you should configure only runtime dependency like this:
 <pre>
 &lt;dependency&gt;
-	&lt;groupId&gt;den.spb.su&lt;/groupId&gt;
+	&lt;groupId&gt;su.spb.den&lt;/groupId&gt;
 	&lt;artifactId&gt;beans-annotation-proc&lt;/artifactId&gt;
 	&lt;version&gt;1.1-SNAPSHOT&lt;/version&gt;
 	&lt;scope&gt;runtime&lt;/scope&gt;
