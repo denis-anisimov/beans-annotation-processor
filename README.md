@@ -14,6 +14,17 @@ The setup depends on the way which you prefer to use:
 
 Setup
 ======
+The artifact is available at the moment in the snapshot repository so you need to configure your project
+to use it:
+<pre>
+&lt;repositories&gt;
+	&lt;repository&gt;
+		&lt;id&gt;snapshots&lt;/id&gt;
+		&lt;url&gt;https://oss.sonatype.org/content/repositories/snapshots&lt;/url&gt;
+	&lt;/repository&gt;
+&lt;/repositories&gt;
+</pre>
+
 Annotation processor configuration
 -----------
 To be able to use annotation processor only use this configuration :
